@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot</title>
+</head>
+<body>
+    <form action="ask" method="POST">
+        <h1>Python Chatbot</h1>
+        <p>Ask a Python Question</p>
+        <p><input type="text" name="user_question" required/></p>
+        <p><input type="submit" value="submit"/></p>
+    </form>
+    {%if user_question%}
+    <p>User Question</p>
+    <p>{{user_question}}</p>
+    <p>Answer</p>
+    <p>{{answer}}</p>
+    {%endif%}
+</body>
+</html>
